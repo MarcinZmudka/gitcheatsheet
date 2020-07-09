@@ -1,5 +1,22 @@
 # Git CheatSheet
 
+## Table of contents
+- [Git CheatSheet](#git-cheatsheet)
+  - [Table of contents](#table-of-contents)
+  - [Usuwanie plików, które nie trafiły do repo z kolejki](#usuwanie-plików-które-nie-trafiły-do-repo-z-kolejki)
+  - [Odwrotność git add](#odwrotność-git-add)
+  - [Usuwanie oraz przenoszenie plików w repozytorium](#usuwanie-oraz-przenoszenie-plików-w-repozytorium)
+  - [Przywrocanie stanu pliku lub całego projektu z repo](#przywrocanie-stanu-pliku-lub-całego-projektu-z-repo)
+      - [Przywracanie zmian commitu](#przywracanie-zmian-commitu)
+  - [Przeglądanie historii](#przeglądanie-historii)
+  - [Jak pisać komentarze?](#jak-pisać-komentarze)
+  - [Dodawanie na stos](#dodawanie-na-stos)
+  - [Branch](#branch)
+  - [Fork](#fork)
+  - [Rozwiązawanie konfliktów](#rozwiązawanie-konfliktów)
+  - [Rebase](#rebase)
+  - [Tagi](#tagi)
+
 ## Usuwanie plików, które nie trafiły do repo z kolejki
 
 ```bash
@@ -41,6 +58,7 @@ Bierzemy commit poprzedni i odwracamy go i dajemy jako nowy. Nie zmienia to stan
 
 ```bash
     git revert <hash>
+    git revert <mergahash> -m 1 # odwraca commit z mergem
 ```
 
 ---
